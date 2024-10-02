@@ -1,0 +1,40 @@
+.background-video {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+  z-index: -1;
+  filter: saturate(1.5);
+}
+
+.black-screen {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  pointer-events: none;
+  background-color: rgba(17, 17, 17, 0.25);
+}
+
+.change-bg-btn {
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 12px 12px 0 0;
+  width: 200px;
+  height: 15px;
+  background-color: #eee;
+  z-index: 10;
+  transition: all 0.4s ease-in-out;
+  color: #eee;
+  cursor: pointer;
+  text-align: center;
+}
+
+.change-bg-btn:hover {
+  height: 40px;
+  color: #222;
+}

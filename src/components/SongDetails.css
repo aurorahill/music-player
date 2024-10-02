@@ -1,0 +1,44 @@
+
+
+.music-header {
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.music-artist {
+  margin: 5px 0;
+  color: var(--mainDimColor);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#song-avatar {
+  margin: 15px 0;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#song-avatar.playing {
+  animation: animateAvatar 0.5s linear infinite;
+}
+
+.objectFitCover {
+  object-fit: cover;
+}
+
+.objectFitContain {
+  object-fit: contain;
+}
+
+@keyframes animateAvatar {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
